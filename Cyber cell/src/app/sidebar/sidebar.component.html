@@ -1,0 +1,130 @@
+<div class="wrapper">
+    <div class="sidebar-wrapper" data-simplebar="true">
+        <div class="sidebar-header">
+            <div>
+                <!-- <img src="assets/images/cyber-crime.jpg" class="logo-icon" alt="logo icon" height="60"> -->
+                <h4>Cyber Crime</h4>
+            </div>
+            <div class="toggle-icon ms-auto d-lg-none"><i class='bx bx-arrow-to-left'></i>
+            </div>
+        </div>
+        <!--navigation-->
+        <ul class="metismenu" id="menu">
+            <li>
+                <a routerLink="/dashboard" routerLinkActive="active">
+                    <div class="parent-icon"><i class='bx bx-folder-plus'></i>
+                    </div>
+                    <div class="menu-title">Dashboard</div>
+                </a>
+            </li>
+            <li *ngIf="assistant || admin">
+                <a routerLink="/edit-intimation" routerLinkActive="active">
+                    <div class="parent-icon"><i class='bx bx-folder-plus'></i>
+                    </div>
+                    <div class="menu-title">Add Data Manually</div>
+                </a>
+            </li>
+            <li class="dropdown" *ngIf="assistant || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-buildings'></i>
+                    </div>
+                    <div class="menu-title">Upload Files</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/advance-pending" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Select CSV / Excel</a>
+                    </li>
+                    <li> <a routerLink="/view-csv-reports" routerLinkActive="active"><i class="bx bx-folder-plus"></i>View CSV Data's</a>
+                    </li>
+                   </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-wrench'></i>
+                    </div>
+                    <div class="menu-title">View Reports</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show" >
+                    <li *ngIf="eo || admin"> <a routerLink="/waiting-approval" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Request waiting List</a>
+                    </li>
+                    <li *ngIf="assistant || admin"> <a routerLink="/approve-list" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Approved List</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li *ngIf="assistant || admin">
+                <a routerLink="/csr-report/" routerLinkActive="active">
+                    <div class="parent-icon"><i class='bx bx-folder-plus'></i>
+                    </div>
+                    <div class="menu-title">CSR Reports</div>
+                </a>
+            </li>
+            <li class="dropdown" *ngIf="eo || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Bank Details</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/add-bank" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Add New Bank</a>
+                    </li>
+                    <li> <a routerLink="/view-bank" routerLinkActive="active"><i class="bx bx-bar-chart-alt"></i>Bank List</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown" *ngIf="eo || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Merchant Details</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/add-merchant" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Add New Merchant</a>
+                    </li>
+                    <li> <a routerLink="/view-merchant" routerLinkActive="active"><i class="bx bx-bar-chart-alt"></i>Bank List</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown" *ngIf="eo || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Social App Details</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/add-social-media" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Add Social Media</a>
+                    </li>
+                    <li> <a routerLink="/view-social-media" routerLinkActive="active"><i class="bx bx-bar-chart-alt"></i>Media List</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown" *ngIf="eo || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Domain Details</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/add-domain" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Add New Domain</a>
+                    </li>
+                    <li> <a routerLink="/view-domain" routerLinkActive="active"><i class="bx bx-bar-chart-alt"></i>Bank List</a>
+                    </li>
+                </ul>
+            </li>
+
+             <li class="dropdown" *ngIf="eo || admin">
+                <a href="javascript:" class="has-arrow" data-bs-toggle="dropdown">
+                    <div class="parent-icon"><i class='bx bx-money'></i>
+                    </div>
+                    <div class="menu-title">Officers Details</div>
+                </a>
+                <ul class="dropdown-menu down-menu" routerLinkActive="show">
+                    <li> <a routerLink="/add-officer" routerLinkActive="active"><i class="bx bx-folder-plus"></i>Add New Officer</a>
+                    </li>
+                    <li> <a routerLink="/view-officer" routerLinkActive="active"><i class="bx bx-bar-chart-alt"></i>Officer List</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>

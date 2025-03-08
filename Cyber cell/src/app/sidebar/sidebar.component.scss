@@ -1,0 +1,22 @@
+.active{
+    color: #ffffff;
+    text-decoration: none;
+    background: rgb(255 255 255 / 15%);
+}
+.page-wrapper {
+  background-image: url("../bg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+.down-menu{
+    position: relative !important;
+    transform: none !important;
+}
+
+h4{
+  margin-top: 17px;
+  margin-left: 10px;
+}
+
+

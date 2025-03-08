@@ -1,0 +1,193 @@
+/* @font include */
+// @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+.page {
+  background-color: var(--white);
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border-style: solid;
+  /* box-shadow: var(--pageShadow); */
+}
+
+.page[size="A4"] {
+  width: 21cm;
+  height: 75cm;
+  overflow: visible;
+}
+
+/* Main page section */
+
+/* .main-container{
+    padding: 10%;
+} */
+
+.A4-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 10%;
+}
+
+/* Header Section */
+.header-container {
+  display: flex;
+  justify-content: center;
+  // border: 2px white solid;
+  // border-bottom: 2px white solid;
+}
+
+.logo-img-div>img {
+  width: 100%;
+  opacity: 1.7;
+}
+
+.heading-div {
+  text-align: center;
+  border-left: 1px grey solid;
+  padding: 4% 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.heading-div>.header-lines {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Bookman Old Style', Georgia, serif;
+  opacity: 1.7;
+}
+
+.print-body {
+  color: #000 !important;
+}
+
+/* Subject Section */
+.subject-container {
+  padding: 0% 4% 5%;
+}
+
+.subject-first-line {
+  font-family: 'Bookman Old Style', Georgia, serif;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sub-ref-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.sub-ref-contents {
+  text-align: justify;
+  font-family: 'Bookman Old Style', Georgia, serif;
+  text-indent: 7%;
+  padding: 0% 0% 0%;
+  // line-height: 3%;
+}
+
+.subject-heading {
+  font-family: 'Bookman Old Style', Georgia, serif;
+  font-size: 1.09em;
+  font-weight: 600;
+  padding: 2% 0% 4% 0%;
+}
+
+.subject-side-heading {
+  font-family: 'Bookman Old Style', Georgia, serif;
+  font-size: 1.09em;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.hashStrick-div {
+  text-align: center;
+  padding: 0% 0% 0%;
+  font-weight: bold;
+  font-size: larger;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.hashStrick-div1 {
+  text-align: center;
+  padding: 0% 0% 0%;
+  font-weight: bold;
+  font-size: larger;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.discription-section {
+  text-indent: 6em;
+  text-align: justify;
+  line-height: 30px;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+/* Table Section */
+
+table,
+td,
+th {
+  //   border: 2px solid white;
+  border: 2px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.bank-heading {
+  width: 120px;
+  text-align: center;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.bank-data {
+  padding: 2% 0%;
+  text-align: center;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.hence-request-div {
+  padding: 2% 5%;
+  text-align: justify;
+  line-height: 29px;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+
+/* Second page */
+.page {
+  margin-top: 2%;
+}
+
+.sign-container {
+  padding: 5% 16%;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherit;
+  line-height: 20px;
+  margin-left: -12%;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.sign-container1 {
+  padding: 3% 35%;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: inherit;
+  line-height: 20px;
+  margin-left: 30%;
+  font-family: 'Bookman Old Style', Georgia, serif;
+}
+
+.to-heading {
+  font-weight: 700;
+  font-size: larger;
+  padding-bottom: 10px;
+}

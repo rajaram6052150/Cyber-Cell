@@ -1,0 +1,38 @@
+<div class="container">
+    <div id="invoiceholder">
+        <div id="invoice1">
+            <div class="cta-group">
+                <a style="cursor: pointer;" (click)="downloadPdf();" class="btn-primary">Print</a>
+            </div>
+        </div>
+
+        <div id="holder">
+            <div class="box">
+                <div class="tie">
+                    <img src="assets/images/logo-icon.png" alt="" />
+                </div>
+                <!-- <h1 style="color: #000;">Company Name</h1> -->
+                <img src="/api/ccp/uploads/{{staff_details?.id}}_photo.JPEG" alt="" />
+                <!-- <h1 class="rname" style="color: #000;">Name S. Example</h1> -->
+                <h1 class="postitle" style="color: #0298b9;">{{staff_details?.sname}}</h1>
+                <h1 class="sig" style="color: #a2a2a2;">{{staff_details?.designation}}</h1>
+                <div class="sign">
+                    <img src="assets/images/sign.png" alt="" />
+                </div>
+                <h1 class="sig" style="color: #0298b9;">Authorised Signatory</h1>
+            </div>
+            <div class="box">
+
+                <h1 style="font-size: 11px;margin:30px 0 20px 15px;text-align :left;color: #a2a2a2;">Blood Group:
+                    {{staff_details?.blood}}</h1>
+                <h1 style="font-size: 11px;margin:0 15px;text-align :left;color: #a2a2a2;">Emergency Contact No:
+                    {{staff_details?.contact}}</h1>
+
+                <div class="bottom">
+                    <img src="assets/images/bottom.jpeg" alt="" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

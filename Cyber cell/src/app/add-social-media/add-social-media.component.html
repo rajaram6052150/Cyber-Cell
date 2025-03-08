@@ -1,0 +1,58 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<!--start page wrapper -->
+<div class="page-wrapper">
+    <div class="page-content">
+        <div class="card">
+            <div class="card-body p-4">
+                <h5 class="card-title">Add New Merchant</h5>
+                <hr />
+                <div class="form-body mt-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="border border-3 p-4 rounded">
+                                <form class="row g-3" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                                    <div class="col-md-4">
+                                        <label for="media_name" class="form-label">Application Name</label>
+                                        <input type="text" class="form-control" id="media_name"
+                                            formControlName="media_name">                                        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="media_designation" class="form-label">Designation</label>
+                                        <input type="text" class="form-control" id="media_designation"
+                                            formControlName="media_designation">                                        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="media_subject" class="form-label">Application Subject</label>
+                                        <input type="text" class="form-control" id="media_subject"
+                                            formControlName="media_subject">                                        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="media_email" class="form-label">Email-ID</label>
+                                        <input type="text" class="form-control" id="media_email"
+                                            formControlName="media_email">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="media_city" class="form-label">City Name</label>
+                                        <input type="text" class="form-control" id="media_city"
+                                            formControlName="media_city">                                        
+                                    </div>
+                                    <div class="row g-3 mt-3">
+                                        <div class="col-md-4">
+                                            <div class="d-grid">
+                                                <button type="submit" class="btn btn-light">Save Data</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--end row-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end page wrapper -->

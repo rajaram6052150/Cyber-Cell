@@ -1,0 +1,214 @@
+<div class="print-body">
+    <div class="container">
+        <div class="mt-5">
+            <div class="header-container">
+                <div class="logo-div">
+                    <div class="logo-img-div">
+                        <img src="assets/images/logo-icon11.png" alt="logo-icon11.png" height="200" class="mb-4" />
+                    </div>
+                </div>
+            </div>
+            <div class="logo-content" style="text-align: center; font-family: 'Bookman Old Style', Georgia, serif;">
+                <span style="font-weight: bold;">TAMILNADU POLICE</span><br />
+                <span style="font-weight: bold;">CYBER CRIME POLICE STATION, COIMBATORE CITY</span><br />
+                <span style="font-weight: bold;">NOTICE U/s 91 & 102 Cr.P.C</span>
+            </div>
+            <div class="hashStrick-div">
+                <b>************************************</b>
+            </div>
+            <div class="hashStrick-div">
+                Date:{{table_data1?.complaint_date}}
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 col-sm-6 lh-lg">
+                    <!-- <div class="to-heading">To:</div> -->
+                    <div>
+                        <b> From,</b><br />
+                        {{table_data1?.sname}},<br />
+                        {{table_data1?.designation}},<br />
+                        Cyber Crime Police Station, <br />
+                        Coimbatore City,<br />
+                        Tamilnadu State.<br />
+                        Ph: 0422-2200383<br />
+                        ccc.cbecity.tnpol@gov.in<br />
+
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 lh-lg d-flex justify-content-end">
+                    <div>
+                        <b> To,</b><br />
+                        {{bank_details?.designation}},<br />
+                        {{bank_details?.bank_name}} Bank,<br />
+                        {{bank_details?.bank_city}},<br />
+                        Tamilnadu.<br />
+                        {{bank_details?.bank_email}}.<br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 mb-5 ps-5 pe-5">
+                <div class="subject-first-line">
+                    <div>Sir/Madam,</div>
+                    <!-- <div class="subject-heading">
+                            <span style="font-weight: bold;"> Date :</span>{{table_data?.complaint_date}}
+                        </div> -->
+                </div>
+
+                <div class="Sub-ref-container mt-3">
+                    <div class="sub-ref-contents">
+                        <span class="subject-side-heading">Sub: </span> {{sub_name}}<br />
+                    </div>
+                    <div class="sub-ref-contents">
+                        <span class="subject-side-heading">Ref: </span> Cr.No.116 U/s 419, 420 IPC and 66(D) of IT
+                        ACT 2008<br />
+                    </div>
+                </div>
+                <div class="hashStrick-div1">
+                    <b>*************</b>
+                </div>
+
+                <div class="discription-section">
+                    In the connection with the references cited above we Cyber Crime Police, Coimbatore City,
+                    Tamil Nadu are investigating the mentioned case. During the course of enquiry,
+                    the following requested details are highly need to nape the culprit. So please furnish the
+                    details as earlier possible
+                </div>
+            </div>
+
+            <!-- Banking Table Section -->
+            <div class="d-flex justify-content-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="bank-heading">S.NO</th>
+                            <th class="bank-heading">Bank</th>
+                            <th class="bank-heading">Acc.NO</th>
+                            <th class="bank-heading">IFSC</th>
+                            <th class="bank-heading">Transaction Date</th>
+                            <th class="bank-heading">Amount<br />(in RS)</th>
+                            <th class="bank-heading">UTR </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let prod of table_data;let i=index">
+                            <td>{{i+1}}</td>
+                            <td class="bank-data">{{this.bank_name}}</td>
+                            <td class="bank-data">{{prod.ac_no}}</td>
+                            <td class="bank-data">{{prod.ifsc_code}}</td>
+                            <td class="bank-data">{{prod.transaction_date}}</td>
+                            <td class="bank-data">{{prod.transaction_amount}}</td>
+                            <td class="bank-data">{{prod.transaction_id}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Hence Request Section -->
+            <div class="hence-request-div">
+                <p>
+                    1.Hence I request you to furnish the required details at the earliest for enquiry purpose.
+                </p>
+
+                <li>
+                    Provide the Clear Scanned Copy of <b>AOF</b> and <b>KYC</b> papers.
+                </li>
+                <li>Type of Account, Account holder <b>Name & Address with photo</b>.</li>
+                <li>Provide details of <b>Mobile Number/Email ID, PAN and Aadhaar No</b> of the account holder.</li>
+                <li>The account shall be <b>Debit Freeze and lien mark the amount with Immediate Effect.</b> If any
+                    Objection/Queries received from the account holder inform to us immediately and instruct the
+                    account holder to contact us for further clarification. </li>
+                <li><b>Current Balance</b> in the account when you receive this notice, at time of debit freeze.
+                </li>
+                <li>Provide the <b>Present Balance</b> & Transaction details for the period from <b>01.01.2023</b>
+                    to till date.
+                </li>
+                <li>Furnish the <b>Beneficiary details</b> (should include Bank Account Number, IFSC Code) of
+                    <b>Outward
+                        Transactions</b> on <b>13.07.2023</b> for our inquiry process.
+                </li>
+
+                <li>
+                    Provide the <b>IP log</b> details for all online transactions <b>(UPI, Mobile and Internet
+                        banking)</b>
+                    with time Stamp.(Most Important).
+                </li>
+                <li>Provide the Base Branch details Email ID, Mobile number of the Branch Manager for further
+                    inquiry.</li>
+                <li>Is there any other account linked to same <b>PAN</b> or <b>Aadhaar number</b> or <b>Mobile
+                        number or Email
+                        address</b> of the account holder? If so, <b>The Account number If the account, IFSC</b>.
+                </li>
+                <li>If the account is <b>“ALREADY”</b> frozen, Furnish the details of i) Name, ii) Address iii)
+                    Email
+                    address and iv) contact number of the <b>Law Enforcement Agency</b> (LEA) based on the notice of
+                    which
+                    the account was Frozen.</li>
+
+            </div>
+        </div>
+        <div class="sign-container1">
+
+            <div class="col-md-12">
+                <img [src]="[sign]" class="mb-4" width="150" height="100">
+                <div>
+                    {{table_data1?.sname}},<br />
+                    {{table_data1?.designation}},<br />
+                    Coimbatore City,<br />
+                    Tamilnadu State.<br />
+                    Ph: 0422-2200383<br />
+                    ccc.cbecity.tnpol@gov.in<br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Second page -->
+    <!-- <div class="page" size="A4"> -->
+    <!-- <div class="p-5 A4-main-section"> -->
+    <!-- <div class="main-container">
+                Header Section
+                <div class="header-container">
+                    <div class="logo-div">
+                        <div class="logo-img-div">
+                            <img src="logo-icon11.png" alt="logo" />
+                        </div>
+                    </div>
+                    <div class="heading-div">
+                        <div class="header-lines">
+                            TAMILNADU POLICE
+                        </div>
+                        <div class="header-lines">
+                            CYBER CRIME POLICE STATION COIMBATORE CITY-641018
+                        </div>
+                        <div class="header-lines">
+                            NOTICE U/s 91 & 102 Cr.P.C
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- Hence Request Section -->
+    <!-- <div class="hence-request-div">
+
+                <li>
+                    Provide the <b>IP log</b> details for all online transactions <b>(UPI, Mobile and Internet
+                        banking)</b>
+                    with time Stamp.(Most Important).
+                </li>
+                <li>Provide the Base Branch details Email ID, Mobile number of the Branch Manager for further
+                    inquiry.</li>
+                <li>Is there any other account linked to same <b>PAN</b> or <b>Aadhaar number</b> or <b>Mobile
+                        number or Email
+                        address</b> of the account holder? If so, <b>The Account number If the account, IFSC</b>.
+                </li>
+                <li>If the account is <b>“ALREADY”</b> frozen, Furnish the details of i) Name, ii) Address iii)
+                    Email
+                    address and iv) contact number of the <b>Law Enforcement Agency</b> (LEA) based on the notice of
+                    which
+                    the account was Frozen.</li>
+
+            </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+</div>

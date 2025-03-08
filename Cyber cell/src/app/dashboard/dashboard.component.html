@@ -1,0 +1,37 @@
+<img src="../bg.png" alt="Logo" class="logo">
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="page-wrapper dash">
+  <div class="page-content">
+    <div class="card">
+      <div class="card-body p-4">
+        <div class="total text-center samp">
+          <h2>Total Requests</h2>
+          <h3>{{ totalCases }}</h3>
+
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="pending">
+              <h2>Pending Requests</h2>
+              <h3>{{ pendingCases }}</h3>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Approved">
+              <h2>Approved Requests</h2>
+              <h3>{{ approvedCases }}</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class = "foot"></div>
+
+<app-footer></app-footer>

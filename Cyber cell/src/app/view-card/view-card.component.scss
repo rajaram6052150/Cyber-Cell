@@ -1,0 +1,120 @@
+// @import url(https://fonts.googleapis.com/css?family=Mrs+Sheppards);
+
+* {
+    margin:0; border:0;
+    /*
+    border:1px solid red;
+    */
+  }
+  #holder {
+    // width: 250px;
+    margin: 10px 10px;
+    display: flex;
+    text-align: center;
+    font-family: 'Helvetica';
+  }
+  #holder .box {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    // padding: 5px;
+    margin: 2px;
+    border-radius: 8px 8px 8px 8px;
+    border:1px solid #0298b9;
+    // background: -webkit-linear-gradient(top,#eee,#fff, #ddd);
+  
+  }
+  #holder .box > img{
+    width: 140px;
+    height: 180px;
+    // margin: 18px 10px 0 0;
+    margin-top: 10px;
+    border:1px solid #0298b9;
+    border-radius: 2px;
+    // background-color:#0298b9;
+    padding: 2px;
+  }
+  #holder .box h1{
+    // font-family: 'trebuchet ms', 'sans serif';
+    font-weight: normal;
+    font-size: 22px;
+    margin: 15px 0 3px 0;
+  }
+  
+  
+  #holder .box h1.rname {
+    // font-family: 'century gothic', 'sans serif';
+    font-size: 15px;
+    margin:5px 0 0 0; padding:0;
+  }
+  #holder .box h1.sig {
+    margin-top: 5px;
+    font-size: 13px;
+    // font-weight: bold;
+    padding:0;
+  }
+  #holder .box h1.postitle {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    padding:0;
+    text-transform: uppercase;
+  }
+  #holder .box .tie img {
+    // background-image: -webkit-linear-gradient(top,#999,#666);
+    width: 248px;
+    border-radius: 8px 8px 0 0;
+  }
+  #holder .box .sign img {
+    // background-image: -webkit-linear-gradient(top,#999,#666);
+    width: 60px;
+    margin-top: 15px;
+    // border-radius: 8px 8px 0 0;
+  }
+  .bottom{
+    position: absolute;
+    bottom: 0;
+  }
+  #holder .box .bottom img {
+    // background-image: -webkit-linear-gradient(top,#999,#666);
+    width: 249px;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  // Outer Layer
+  #invoiceholder {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    width: 700px;
+  }
+  #invoice1 {
+    position: relative;
+    margin: 0 auto;
+    background: #FFF;
+    
+  }
+  .cta-group {
+    text-align: right;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .cta-group a {
+    display: inline-block;
+    padding: 7px;
+    border-radius: 4px;
+    background: rgb(196, 57, 10);
+    margin-right: 10px;
+    min-width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75em;
+  }
+  
+  .cta-group .btn-primary {
+    background: #00a63f;
+  }
+  
+  .cta-group.mobile-btn-group {
+    display: none;
+  }

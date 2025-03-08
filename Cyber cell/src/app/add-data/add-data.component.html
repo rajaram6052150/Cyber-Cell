@@ -1,0 +1,395 @@
+<img src="../bg.png" alt="Logo" class="logo">
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<!--start page wrapper -->
+<div class="page-wrapper">
+    <div class="page-content">
+        <div class="card">
+            <div class="card-body p-4">
+                <h5 class="card-title">Update Additional1
+
+                </h5>
+                <hr />
+                <div class="form-body mt-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form class="row g-3" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                                <div class="border border-3 p-4 rounded">
+                                    <h5>Crime Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="ack_no" class="form-label">Ack No</label>
+                                            <input type="text" class="form-control" id="ack_no" formControlName="ack_no"
+                                                readonly>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="state_name" class="form-label">State Name</label>
+                                            <input type="text" class="form-control" id="state_name"
+                                                formControlName="state_name" readonly>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="district_name" class="form-label">District Name</label>
+                                            <input type="text" class="form-control" id="district_name"
+                                                formControlName="district_name" readonly>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label for="station_name" class="form-label">Station_name </label>
+                                            <input type="text" class="form-control" id="station_name"
+                                                formControlName="station_name" readonly>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="category" class="form-label">Category</label>
+                                            <input type="text" class="form-control" id="category"
+                                                formControlName="category">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="sub_category" class="form-label">Sub Category</label>
+                                            <input type="text" class="form-control" id="sub_category"
+                                                formControlName="sub_category">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="crime_info" class="form-label">Crime Info</label>
+                                            <textarea type="text" class="form-control" id="crime_info" rows="3"
+                                                formControlName="crime_info">
+                                                </textarea>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="c_status" class="form-label">Status</label>
+                                            <input type="text" class="form-control" id="c_status"
+                                                formControlName="c_status">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-3 p-4 rounded">
+                                    <h5>Incident Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="incident_date" class="form-label">Incident Date</label>
+                                            <input type="date" class="form-control" id="incident_date"
+                                                formControlName="incident_date">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="complaint_date" class="form-label">Complaint Date</label>
+                                            <input type="date" class="form-control" id="complaint_date"
+                                                formControlName="complaint_date">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="last_action_date" class="form-label">Last Action Date</label>
+                                            <input type="date" class="form-control" id="last_action_date"
+                                                formControlName="last_action_date">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="complainant_name" class="form-label">Complainant Name</label>
+                                            <input type="text" class="form-control" id="complainant_name"
+                                                formControlName="complainant_name">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="complainant_mobile" class="form-label">Complainant
+                                                Mobile</label>
+                                            <input type="text" class="form-control" id="complainant_mobile"
+                                                formControlName="complainant_mobile">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="complainant_email" class="form-label">Complainant Email</label>
+                                            <input type="text" class="form-control" id="complainant_email"
+                                                formControlName="complainant_email">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="complainant_address" class="form-label">Complainant
+                                                Address</label>
+                                            <input type="text" class="form-control" id="complainant_address"
+                                                formControlName="complainant_address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-3 p-4 rounded">
+                                    <h5>Suspected Person Details</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="suspect_name" class="form-label">Suspect Name</label>
+                                            <input type="text" class="form-control" id="suspect_name"
+                                                formControlName="suspect_name">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="suspect_mobile" class="form-label">Suspect Mobile</label>
+                                            <input type="text" class="form-control" id="suspect_mobile"
+                                                formControlName="suspect_mobile">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="suspect_id_no" class="form-label">Suspect ID No</label>
+                                            <input type="text" class="form-control" id="suspect_id_no"
+                                                formControlName="suspect_id_no">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="amount" class="form-label">Amount</label>
+                                            <input type="number" class="form-control" id="amount"
+                                                formControlName="amount">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-3 p-4 rounded">
+                                    <h5>Additional Info</h5>
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label for="sname" class="form-label">Select Officer</label>
+                                            <select class="form-select" id="officers" formControlName="officers">
+                                                <option value="" hidden>Select officer</option>
+                                                <option *ngFor="let vend of prod_names" value="{{vend.id}}">
+                                                    {{vend.sname}}
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="pay_type" class="form-label">Select Payment Type</label>
+                                            <select class="form-select" id="pay_type" formControlName="pay_type"
+                                                (change)="onPaymentTypeChange($event)">
+                                                <option hidden>Select Payment</option>
+                                                <option *ngFor="let ty of type_name" [value]="ty.id">{{ ty.pay_type }}
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-4" *ngIf="sub_drop?.length > 0">
+                                            <label for="subject_desc" class="form-label">Select Subject</label>
+                                            <select class="form-select" id="subject_desc"
+                                                formControlName="subject_desc">
+                                                <option value="" hidden>Select Subject</option>
+                                                <option *ngFor="let sb of sub_drop" [value]="sb.id">{{
+                                                    sb.subject_desc }}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border border-3 p-4 rounded">
+                                    <h5>Add Transaction Info</h5>
+                                    <div class="row g-3">
+                                        <form [formGroup]="form" (ngSubmit)="submitFile()">
+                                            <div class="form-group">
+                                                <div class="col-md-4">
+                                                    <input type="file" (change)="uploadFile($event)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-4">
+                                                    <button
+                                                        class="btn btn-success btn-block btn-lg btn-block">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row g-3 mt-3">
+                                    <div class="col-md-4">
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-light">Send Request</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!--end row-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end page wrapper -->
+<app-footer></app-footer>
+<!--<app-header></app-header>-->
+<!--<app-sidebar></app-sidebar>-->
+<!--<div class="page-wrapper">-->
+<!--  <div class="page-content">-->
+<!--    <div class="card">-->
+<!--      <div class="card-body p-4">-->
+<!--        <h5 class="card-title">Update Additional</h5>-->
+<!--        <hr />-->
+<!--        <div class="form-body mt-4">-->
+<!--          <div class="row">-->
+<!--            <div class="col-lg-12">-->
+<!--              <form class="row g-3" [formGroup]="myForm" (ngSubmit)="onSubmit()">-->
+<!--                <div class="border border-3 p-4 rounded">-->
+<!--                  <h5>Crime Details</h5>-->
+<!--                  <div class="row g-3">-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="ack_no" class="form-label">Ack No</label>-->
+
+<!--                      <input type="text" class="form-control" id="ack_no" formControlName="ack_no"-->
+<!--                             readonly>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="state_name" class="form-label">State Name</label>-->
+<!--                      <input type="text" class="form-control" id="state_name"-->
+<!--                             formControlName="state_name" readonly>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="district_name" class="form-label">District Name</label>-->
+<!--                      <input type="text" class="form-control" id="district_name"-->
+<!--                             formControlName="district_name" readonly>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="station_name" class="form-label">Station_name </label>-->
+<!--                      <input type="text" class="form-control" id="station_name"-->
+<!--                             formControlName="station_name" readonly>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="category" class="form-label">Category</label>-->
+<!--                      <input type="text" class="form-control" id="category"-->
+<!--                             formControlName="category">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="sub_category" class="form-label">Sub Category</label>-->
+<!--                      <input type="text" class="form-control" id="sub_category"-->
+<!--                             formControlName="sub_category">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                      <label for="crime_info" class="form-label">Crime Info</label>-->
+<!--                      <textarea type="text" class="form-control" id="crime_info" rows="3"-->
+<!--                                formControlName="crime_info">-->
+<!--                                                </textarea>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="c_status" class="form-label">Status</label>-->
+<!--                      <input type="text" class="form-control" id="c_status"-->
+<!--                             formControlName="c_status">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="border border-3 p-4 rounded">-->
+<!--                  <h5>Incident Details</h5>-->
+<!--                  <div class="row g-3">-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="incident_date" class="form-label">Incident Date</label>-->
+<!--                      <input type="date" class="form-control" id="incident_date"-->
+<!--                             formControlName="incident_date">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="complaint_date" class="form-label">Complaint Date</label>-->
+<!--                      <input type="date" class="form-control" id="complaint_date"-->
+<!--                             formControlName="complaint_date">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="last_action_date" class="form-label">Last Action Date</label>-->
+<!--                      <input type="date" class="form-control" id="last_action_date"-->
+<!--                             formControlName="last_action_date">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="complainant_name" class="form-label">Complainant Name</label>-->
+<!--                      <input type="text" class="form-control" id="complainant_name"-->
+<!--                             formControlName="complainant_name">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="complainant_mobile" class="form-label">Complainant-->
+<!--                        Mobile</label>-->
+<!--                      <input type="text" class="form-control" id="complainant_mobile"-->
+<!--                             formControlName="complainant_mobile">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="complainant_email" class="form-label">Complainant Email</label>-->
+<!--                      <input type="text" class="form-control" id="complainant_email"-->
+<!--                             formControlName="complainant_email">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="complainant_address" class="form-label">Complainant-->
+<!--                        Address</label>-->
+<!--                      <input type="text" class="form-control" id="complainant_address"-->
+<!--                             formControlName="complainant_address">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="border border-3 p-4 rounded">-->
+<!--                  <h5>Suspected Person Details</h5>-->
+<!--                  <div class="row g-3">-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="suspect_name" class="form-label">Suspect Name</label>-->
+<!--                      <input type="text" class="form-control" id="suspect_name"-->
+<!--                             formControlName="suspect_name">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="suspect_mobile" class="form-label">Suspect Mobile</label>-->
+<!--                      <input type="text" class="form-control" id="suspect_mobile"-->
+<!--                             formControlName="suspect_mobile">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="suspect_id_no" class="form-label">Suspect ID No</label>-->
+<!--                      <input type="text" class="form-control" id="suspect_id_no"-->
+<!--                             formControlName="suspect_id_no">-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="amount" class="form-label">Amount</label>-->
+<!--                      <input type="number" class="form-control" id="amount"-->
+<!--                             formControlName="amount">-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="border border-3 p-4 rounded">-->
+<!--                  <h5>Additional Info</h5>-->
+<!--                  <div class="row g-3">-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="sname" class="form-label">Select Officer</label>-->
+<!--                      <select class="form-select" id="sname" formControlName="sname">-->
+<!--                        <option value="" hidden>Select officer</option>-->
+<!--                        <option *ngFor="let vend of prod_names" value="{{vend.id}}">-->
+<!--                          {{vend.sname}}-->
+<!--                        </option>-->
+<!--                      </select>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="pay_type" class="form-label">Select Payment Type</label>-->
+<!--                      <select class="form-select" id="pay_type" formControlName="pay_type">-->
+<!--                        <option value="" hidden>Select Payment</option>-->
+<!--                        <option *ngFor="let ty of type_name" value="{{ty.id}}">-->
+<!--                          {{ty.pay_type}}-->
+<!--                        </option>-->
+<!--                      </select>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4">-->
+<!--                      <label for="subject_desc" class="form-label">Select Subject</label>-->
+<!--                      <select class="form-select" id="subject_desc" formControlName="subject_desc">-->
+<!--                        <option value="" hidden>Select Payment</option>-->
+<!--                        <option *ngFor="let sb of sub_name" value="{{sb.id}}">-->
+<!--                          {{sb.subject_desc}}-->
+<!--                        </option>-->
+<!--                      </select>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="border border-3 p-4 rounded">-->
+<!--                  <h5>Add Transaction Info</h5>-->
+<!--                  <div class="row g-3">-->
+<!--                    <form [formGroup]="form" (ngSubmit)="submitFile()">-->
+<!--                      <div class="form-group">-->
+<!--                        <div class="col-md-4">-->
+<!--                          <input type="file" (change)="uploadFile($event)">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="form-group">-->
+<!--                        <div class="col-md-4">-->
+<!--                          <br>-->
+<!--                          <button-->
+<!--                            class="btn btn-success btn-block btn-lg btn-block">Submit</button>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </form>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="row g-3 mt-3">-->
+<!--                  <div class="col-md-4">-->
+<!--                    <div class="d-grid">-->
+<!--                      <button type="submit" class="btn btn-light">Send Request</button>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--</div>-->
+
+<!--<app-footer></app-footer>-->

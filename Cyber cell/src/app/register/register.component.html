@@ -1,0 +1,66 @@
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Login #08</h2>
+            </div> -->
+            <div class="header__logo">
+                <a routerLink="/dashboard"><img height="50px" src="assets/img/logo1.png" alt=""></a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="login-wrap p-4 p-md-5">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-user-o"></span>
+                    </div>
+                    <h3 class="text-center mb-4">Register Here</h3>
+                    <form class="login-form" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="Full Name"
+                                formControlName="name">
+                                <small class="error-warning"
+                                *ngIf="myForm.get('name').errors && myForm.get('name').touched"><i
+                                class="fa fa-exclamation-circle"></i> Please Enter Full Name</small>
+                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="Email Id"
+                                formControlName="email">
+                            <small class="error-warning"
+                                *ngIf="myForm.get('email').errors && myForm.get('email').touched"><i
+                                    class="fa fa-exclamation-circle"></i> Please Enter Email Id</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="UserName"
+                                formControlName="username">
+                            <small class="error-warning"
+                                *ngIf="myForm.get('username').errors && myForm.get('username').touched"><i
+                                    class="fa fa-exclamation-circle"></i> Please Enter Username</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control rounded-left" placeholder="Password"
+                                formControlName="password">
+                            <small class="error-warning"
+                                *ngIf="myForm.get('password').errors && myForm.get('password').touched"><i
+                                    class="fa fa-exclamation-circle"></i> Please Enter Password</small>
+                        </div>
+                        <div class="form-group d-md-flex">
+                            <!-- <div class="w-50">
+                    <label class="checkbox-wrap checkbox-primary">Remember Me
+                                  <input type="checkbox">
+                                  <span class="checkmark"></span>
+                                </label>
+                            </div> -->
+                            <div class="text-md-left">
+                                <p>Already have Account <a routerLink="/login">Login</a> here</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary rounded submit p-3 px-5">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

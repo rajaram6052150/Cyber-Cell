@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <div class="section-authentication-signin d-flex align-items-center justify-content-center my-lg-0">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+        <div class="col mx-auto">
+          <div class="mb-4 text-center">
+            <!-- Add your logo here -->
+            <img src="../bg.png" alt="Brand Logo" style="max-width: 200px;" [@fade]="showLogo ? 'visible' : 'hidden'">
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="border p-4 rounded">
+                <div class="text-center">
+                  <h3 class="">Sign in</h3>
+                </div>
+                <div class="form-body">
+                  <form class="row g-3" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+                    <div class="col-12">
+                      <label for="inputEmailAddress" class="form-label">Username</label>
+                      <input type="email" class="form-control" id="inputEmailAddress" placeholder="Username"
+                             formControlName="username">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputChoosePassword" class="form-label">Password</label>
+                      <div class="input-group" id="show_hide_password">
+                        <input type="password" class="form-control border-end-0" #passwordInput id="inputChoosePassword" placeholder="Password" formControlName="password">
+                        <div class="input-group-text bg-transparent">
+                          <i class="bx" [ngClass]="{ 'bx-hide': !showPassword, 'bx-show': showPassword }" (click)="togglePasswordVisibility(passwordInput)"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-grid">
+                        <button type="submit" class="btn btn-light"><i class="bx bxs-lock-open"></i>Sign in</button>
+                      </div>
+                      <div class = "samp"></div>
+                      <div class="d-grid">
+                        <button class="btn btn-primary" (click)="new_user()">Sign Up</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
